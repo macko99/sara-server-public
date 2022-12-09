@@ -1,9 +1,9 @@
 # Welcome to SARA project
 #### Search and Rescue application
 
-## iOS app repository: [🍎 iOS app](https://github.com/macko99/sara-ios)
+## iOS app repository: [🍎 iOS app](https://github.com/macko99/sara-ios-public)
 
-## Docker compose repo: [💿 Docker](https://github.com/macko99/sara-docker)
+## Docker compose repo: [💿 Docker](https://github.com/macko99/sara-docker-public)
 
 
 ## What's SARA?
@@ -37,7 +37,7 @@ Now you are just one command away from running **database + backend + frontend**
 
 2. **Increase RAM allocation for docker (e.g. using Docker Desktop) to at least 4GB**
 
-3. Clone [💿 Docker](https://github.com/macko99/sara-docker) and navigate to folder **docker**, you will find **docker-compose.yaml** inside
+3. Clone [💿 Docker](https://github.com/macko99/sara-docker-public) and navigate to folder **docker**, you will find **docker-compose.yaml** inside
 
 4. Execute 
 
