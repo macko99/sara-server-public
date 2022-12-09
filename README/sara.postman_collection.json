@@ -1,0 +1,2261 @@
+{
+	"info": {
+		"_postman_id": "af2bf37d-5496-45ee-93da-b16bcab6b96a",
+		"name": "sara",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "/refresh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODg4MCwianRpIjoiYTZjMWFlNWMtYzc4NS00NGRiLTlkOTItOGNkODdkOTM4OGFiIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJtYWNpZWsiLCJuYmYiOjE2MzYyMjg4ODAsImV4cCI6MTYzODgyMDg4MH0.9cNMStGao3Oahv74fpV-8d4NTJBdYZMV5lylQwsOnGo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/register/apn",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODkyOCwianRpIjoiMjM4ZDA0YTMtNGRiMS00NmM2LTk2YTUtOTBjZDAzYjY2ZGMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIyODkyOCwiZXhwIjoxNjM2MzE1MzI4fQ.wnrhv0l39K3zQvs2TS_tZM_jOkrpKdkFbtr2NMQ-zS8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apn\": \"023112ebb74ba65497977f919763c127717f14f532caba48954b50717660258a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/register/apn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"register",
+								"apn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODkyOCwianRpIjoiMjM4ZDA0YTMtNGRiMS00NmM2LTk2YTUtOTBjZDAzYjY2ZGMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIyODkyOCwiZXhwIjoxNjM2MzE1MzI4fQ.wnrhv0l39K3zQvs2TS_tZM_jOkrpKdkFbtr2NMQ-zS8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"altitude\": 227.30780792236328, \"course\": -1, \"horizontal_accuracy\": 65, \"action\": 1, \"time\": 1621174194, \"longitude\": 50.02000058863631, \"course_accuracy\": -1, \"latitude\": 19.901194178107815, \"speed\": -1, \"speed_accuracy\": -1, \"vertical_accuracy\": 20.838850021362305, \"width\": 33}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/resources",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODkyOCwianRpIjoiMjM4ZDA0YTMtNGRiMS00NmM2LTk2YTUtOTBjZDAzYjY2ZGMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIyODkyOCwiZXhwIjoxNjM2MzE1MzI4fQ.wnrhv0l39K3zQvs2TS_tZM_jOkrpKdkFbtr2NMQ-zS8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"action\": 1, \"uuid\": \"09f7644f-8ae8-475f-97b1-6286c07cfeef\", \"extension\": \"png\", \"blob\": \"hello maciek\", \"longitude\": 50.02, \"latitude\": 19.5, \"time\": 1633898684, \"name\": \"test name\", \"kind\": 2, \"description\": \"test ;)\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/actions/resources",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"resources"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/update/names",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMTEyMSwianRpIjoiZGU5NmJhMWItOTU3Ni00ZTc0LWI0MWItMTQ3ZmJhNDIxMmZlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjMxMTIxLCJleHAiOjE2MzYzMTc1MjF9.98Nj-4zudvrOhpoAQldZprTKActMNP_-X221Rj_JYZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Imie\",\n    \"last_name\": \"Nazwisko\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/users/update/names",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"update",
+								"names"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/update/username",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMTEyMSwianRpIjoiZGU5NmJhMWItOTU3Ni00ZTc0LWI0MWItMTQ3ZmJhNDIxMmZlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjMxMTIxLCJleHAiOjE2MzYzMTc1MjF9.98Nj-4zudvrOhpoAQldZprTKActMNP_-X221Rj_JYZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"maciek\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/users/update/username",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"update",
+								"username"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/update/password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMTEyMSwianRpIjoiZGU5NmJhMWItOTU3Ni00ZTc0LWI0MWItMTQ3ZmJhNDIxMmZlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjMxMTIxLCJleHAiOjE2MzYzMTc1MjF9.98Nj-4zudvrOhpoAQldZprTKActMNP_-X221Rj_JYZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"password\": \"maciek\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/users/update/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"update",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>/join",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions/1/join",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"1",
+								"join"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/leave",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions/leave",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"leave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authorize/twilio?identity=<uuid>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjk4MzI1NCwianRpIjoiM2RlODM4MDItODkyMS00MDVmLWJmYjQtYjExMjE4OTA5NDcyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjk4MzI1NCwiZXhwIjoxNjM3MDY5NjU0fQ.uvslEu8N9vIsXXP2SYjgZPHQ6VWQMURHHp7mGmTaznw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5555/authorize/twilio?identity=68a6459b-a825-4602-b945-33d1805b9c9d",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"authorize",
+								"twilio"
+							],
+							"query": [
+								{
+									"key": "identity",
+									"value": "68a6459b-a825-4602-b945-33d1805b9c9d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNzE3NjYxOSwianRpIjoiMTIyN2Q5NGItODAwNy00ZmFkLTg4YTItNDhiOGYzNWQ4MDAwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNzE3NjYxOSwiZXhwIjoxNjM3MTc2Njc5fQ.XYVYu09g1lyXJmccVYU9hwWtRowoUfsYo2F7mFWBsOg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/my_areas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users/my_areas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"my_areas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/me/validate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users/me/validate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"me",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/areas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"areas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resources/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMjIxMCwianRpIjoiOTJkYjgxODAtYjIzMS00MzE5LWJkMTktYTA4ZWQ0MDZhOTU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIzMjIxMCwiZXhwIjoxNjM2MzE4NjEwfQ.5GM4bO8qBxlcyviNxpeD4oTTznAe1NE-OEmZg_7l7HA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/resources/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"resources",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resources/blob?uuid=<public_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/resources/blob?uuid=fd6aaaf8-950f-48a7-bef0-be31a6ad9ca8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"resources",
+								"blob"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "fd6aaaf8-950f-48a7-bef0-be31a6ad9ca8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/revoke/apn",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apn\": \"023112ebb74ba65497977f919763c127717f14f532caba48954b50717660258a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/revoke/apn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"revoke",
+								"apn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "/register/one_time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone\": \"+48790621405\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/register/one_time",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"register",
+								"one_time"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/send/invite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjMyNjcwMywianRpIjoiODIwNmZlOGMtNTFjOS00MTQxLThlNzctNzNjOTQ5NDAxMTlmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MzI2NzAzLCJleHAiOjE2MzY0MTMxMDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.90tAKRuX_kRtTIN_lI8CaANKhnD7srYVkzwC_1woXAs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number_with_prefix\": \"+48790621405\",\n    \"login_code\": \"e9621a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/sms/send/invite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"sms",
+								"send",
+								"invite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/action/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/notifications/send/action/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"notifications",
+								"send",
+								"action",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/notifications/send/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"notifications",
+								"send",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/area/<area_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/notifications/send/area/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"notifications",
+								"send",
+								"area",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/user/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/notifications/send/user/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"notifications",
+								"send",
+								"user",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/add_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 10,\n    \"area\": 25\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/areas/add_user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"areas",
+								"add_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/codes/generate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/codes/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"codes",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/add_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 7,\n    \"action\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/actions/add_user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"add_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"new action 123\",\n    \"description\": \"dziala ;)\",\n    \"longitude\": \"34.23\",\n    \"latitude\": \"34.44\",\n    \"radius\": \"2344\",\n    \"start_time\": 1621174194\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/actions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>/add_area",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"new test area 1\",\n    \"coordinates\": [\n        {\n            \"latitude\": \"23.34\",\n            \"longitude\": \"43.44\",\n            \"order\": 1\n        },\n        {\n            \"latitude\": \"27.34\",\n            \"longitude\": \"47.44\",\n            \"order\": 2\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/actions/1/add_area",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"1",
+								"add_area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/add_admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 9\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/users/add_admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"add_admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/toggle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjMyNjcwMywianRpIjoiODIwNmZlOGMtNTFjOS00MTQxLThlNzctNzNjOTQ5NDAxMTlmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MzI2NzAzLCJleHAiOjE2MzY0MTMxMDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.90tAKRuX_kRtTIN_lI8CaANKhnD7srYVkzwC_1woXAs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": 2,\n    \"is_active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/actions/toggle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"toggle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/set_color",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 9,\n    \"color\": \"#ff8000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/users/set_color",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"set_color"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/set_interval",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 7,\n    \"interval\": 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/users/set_interval",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"set_interval"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/rich",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users/rich",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"rich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/deleted/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions/deleted/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"deleted",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/deleted/rich",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users/deleted/rich",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"deleted",
+								"rich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations/2?timestamp=1635977106",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations",
+								"2"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>?timestamp=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations/2?timestamp=1635977106",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations",
+								"2"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>?id=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations/2?timestamp=1635",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations",
+								"2"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions/4/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"4",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<action_id>/rich",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/areas/4/rich",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"areas",
+								"4",
+								"rich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<area_id>/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/areas/1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"areas",
+								"1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations?timestamp=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations?timestamp=1635977106",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations?id=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations?id=16333",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "16333"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/codes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users/codes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resources/<action_id>/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/resources/1/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"resources",
+								"1",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations/2/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations",
+								"2",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>/<user_id>?timestamp=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations/2/7?timestamp=1635977106",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations",
+								"2",
+								"7"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>/<user_id>?id=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations/2/7?id=1635",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations",
+								"2",
+								"7"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1635"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/codes/delete/<code_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/codes/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"codes",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/locations/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"locations",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/del_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 8,\n    \"action\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/actions/del_user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"del_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/del_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 8,\n    \"area\": 56\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5555/areas/del_user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"areas",
+								"del_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<area_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/areas/105",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"areas",
+								"105"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/actions/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"actions",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5555/users/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"users",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"maciek22\",\n    \"password\": \"maciek\",\n    \"first_name\": \"Maciej\",\n    \"last_name\": \"Maciej\",\n    \"phone\": \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5555/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "maciek",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "maciek",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/login?admin_required=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "admin_required",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login/code",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "5c358aaefe7272280704e9267a81a2fe",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/login/code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"login",
+						"code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/webhook/twilio/chat",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5555/webhook/twilio/chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"webhook",
+						"twilio",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

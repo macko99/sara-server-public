@@ -1,0 +1,2326 @@
+{
+	"info": {
+		"_postman_id": "0f113000-196c-4664-ae1e-1c6525df704a",
+		"name": "sara-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "/refresh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODg4MCwianRpIjoiYTZjMWFlNWMtYzc4NS00NGRiLTlkOTItOGNkODdkOTM4OGFiIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJtYWNpZWsiLCJuYmYiOjE2MzYyMjg4ODAsImV4cCI6MTYzODgyMDg4MH0.9cNMStGao3Oahv74fpV-8d4NTJBdYZMV5lylQwsOnGo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/refresh",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/register/apn",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODkyOCwianRpIjoiMjM4ZDA0YTMtNGRiMS00NmM2LTk2YTUtOTBjZDAzYjY2ZGMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIyODkyOCwiZXhwIjoxNjM2MzE1MzI4fQ.wnrhv0l39K3zQvs2TS_tZM_jOkrpKdkFbtr2NMQ-zS8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apn\": \"023112ebb74ba65497977f919763c127717f14f532caba48954b50717660258a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/register/apn",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"register",
+								"apn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODkyOCwianRpIjoiMjM4ZDA0YTMtNGRiMS00NmM2LTk2YTUtOTBjZDAzYjY2ZGMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIyODkyOCwiZXhwIjoxNjM2MzE1MzI4fQ.wnrhv0l39K3zQvs2TS_tZM_jOkrpKdkFbtr2NMQ-zS8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"altitude\": 227.30780792236328, \"course\": -1, \"horizontal_accuracy\": 65, \"action\": 1, \"time\": 1621174194, \"longitude\": 50.02000058863631, \"course_accuracy\": -1, \"latitude\": 19.901194178107815, \"speed\": -1, \"speed_accuracy\": -1, \"vertical_accuracy\": 20.838850021362305, \"width\": 33}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/resources",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyODkyOCwianRpIjoiMjM4ZDA0YTMtNGRiMS00NmM2LTk2YTUtOTBjZDAzYjY2ZGMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIyODkyOCwiZXhwIjoxNjM2MzE1MzI4fQ.wnrhv0l39K3zQvs2TS_tZM_jOkrpKdkFbtr2NMQ-zS8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"action\": 1, \"uuid\": \"09f7644f-8ae8-475f-97b1-6286c07cfeef\", \"extension\": \"png\", \"blob\": \"hello maciek\", \"longitude\": 50.02, \"latitude\": 19.5, \"time\": 1633898684, \"name\": \"test name\", \"kind\": 2, \"description\": \"test ;)\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/resources",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"resources"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/update/names",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMTEyMSwianRpIjoiZGU5NmJhMWItOTU3Ni00ZTc0LWI0MWItMTQ3ZmJhNDIxMmZlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjMxMTIxLCJleHAiOjE2MzYzMTc1MjF9.98Nj-4zudvrOhpoAQldZprTKActMNP_-X221Rj_JYZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Imie\",\n    \"last_name\": \"Nazwisko\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/update/names",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"update",
+								"names"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/update/username",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMTEyMSwianRpIjoiZGU5NmJhMWItOTU3Ni00ZTc0LWI0MWItMTQ3ZmJhNDIxMmZlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjMxMTIxLCJleHAiOjE2MzYzMTc1MjF9.98Nj-4zudvrOhpoAQldZprTKActMNP_-X221Rj_JYZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"maciek\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/update/username",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"update",
+								"username"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/update/password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMTEyMSwianRpIjoiZGU5NmJhMWItOTU3Ni00ZTc0LWI0MWItMTQ3ZmJhNDIxMmZlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjMxMTIxLCJleHAiOjE2MzYzMTc1MjF9.98Nj-4zudvrOhpoAQldZprTKActMNP_-X221Rj_JYZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"password\": \"maciek\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/update/password",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"update",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>/join",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/1/join",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"1",
+								"join"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/leave",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/leave",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"leave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authorize/twilio?identity=<uuid>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjk4MzI1NCwianRpIjoiM2RlODM4MDItODkyMS00MDVmLWJmYjQtYjExMjE4OTA5NDcyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjk4MzI1NCwiZXhwIjoxNjM3MDY5NjU0fQ.uvslEu8N9vIsXXP2SYjgZPHQ6VWQMURHHp7mGmTaznw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/authorize/twilio?identity=68a6459b-a825-4602-b945-33d1805b9c9d",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"authorize",
+								"twilio"
+							],
+							"query": [
+								{
+									"key": "identity",
+									"value": "68a6459b-a825-4602-b945-33d1805b9c9d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNzE3NjYxOSwianRpIjoiMTIyN2Q5NGItODAwNy00ZmFkLTg4YTItNDhiOGYzNWQ4MDAwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNzE3NjYxOSwiZXhwIjoxNjM3MTc2Njc5fQ.XYVYu09g1lyXJmccVYU9hwWtRowoUfsYo2F7mFWBsOg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/me",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/my_areas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/my_areas",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"my_areas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/me/validate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/me/validate",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"me",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/areas/1",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"areas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resources/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIzMjIxMCwianRpIjoiOTJkYjgxODAtYjIzMS00MzE5LWJkMTktYTA4ZWQ0MDZhOTU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llayIsIm5iZiI6MTYzNjIzMjIxMCwiZXhwIjoxNjM2MzE4NjEwfQ.5GM4bO8qBxlcyviNxpeD4oTTznAe1NE-OEmZg_7l7HA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/resources/1",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"resources",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resources/blob?uuid=<public_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/resources/blob?uuid=fd6aaaf8-950f-48a7-bef0-be31a6ad9ca8",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"resources",
+								"blob"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "fd6aaaf8-950f-48a7-bef0-be31a6ad9ca8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/logout",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/revoke/apn",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTAwMywianRpIjoiMGJkNjFhY2QtZDE3Ni00OWFkLTg3YWYtYWQ2NTMzY2Y4YTI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Im1hY2llazMxIiwibmJmIjoxNjM2MjI5MDAzLCJleHAiOjE2MzYzMTU0MDN9.M2uXZx6wxMdTplhMIoiwTrraMuAWYNgsXxvj8Yp07xc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apn\": \"023112ebb74ba65497977f919763c127717f14f532caba48954b50717660258a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/revoke/apn",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"revoke",
+								"apn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "/register/one_time",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone\": \"+48790621405\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/register/one_time",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"register",
+								"one_time"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/sms/send/invite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjMyNjcwMywianRpIjoiODIwNmZlOGMtNTFjOS00MTQxLThlNzctNzNjOTQ5NDAxMTlmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MzI2NzAzLCJleHAiOjE2MzY0MTMxMDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.90tAKRuX_kRtTIN_lI8CaANKhnD7srYVkzwC_1woXAs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number_with_prefix\": \"+48790621405\",\n    \"login_code\": \"e9621a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/sms/send/invite",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sms",
+								"send",
+								"invite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/action/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/notifications/send/action/1",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"notifications",
+								"send",
+								"action",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/notifications/send/all",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"notifications",
+								"send",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/area/<area_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/notifications/send/area/1",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"notifications",
+								"send",
+								"area",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/notifications/send/user/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"msg\": \"Cześć! 🤟🏻\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/notifications/send/user/7",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"notifications",
+								"send",
+								"user",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/add_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 10,\n    \"area\": 25\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/areas/add_user",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"areas",
+								"add_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/codes/generate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/codes/generate",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"codes",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/add_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 7,\n    \"action\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/add_user",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"add_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"new action 123\",\n    \"description\": \"dziala ;)\",\n    \"longitude\": \"34.23\",\n    \"latitude\": \"34.44\",\n    \"radius\": \"2344\",\n    \"start_time\": 1621174194\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>/add_area",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"new test area 1\",\n    \"coordinates\": [\n        {\n            \"latitude\": \"23.34\",\n            \"longitude\": \"43.44\",\n            \"order\": 1\n        },\n        {\n            \"latitude\": \"27.34\",\n            \"longitude\": \"47.44\",\n            \"order\": 2\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/1/add_area",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"1",
+								"add_area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/add_admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 9\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/add_admin",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"add_admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/toggle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjMyNjcwMywianRpIjoiODIwNmZlOGMtNTFjOS00MTQxLThlNzctNzNjOTQ5NDAxMTlmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MzI2NzAzLCJleHAiOjE2MzY0MTMxMDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.90tAKRuX_kRtTIN_lI8CaANKhnD7srYVkzwC_1woXAs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": 2,\n    \"is_active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/toggle",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"toggle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/set_color",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 9,\n    \"color\": \"#ff8000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/set_color",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"set_color"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/set_interval",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 7,\n    \"interval\": 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/set_interval",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"set_interval"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/1",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/rich",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/rich",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"rich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/deleted/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/deleted/all",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"deleted",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/deleted/rich",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/deleted/rich",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"deleted",
+								"rich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations/2?timestamp=1635977106",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								"2"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>?timestamp=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations/2?timestamp=1635977106",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								"2"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>?id=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations/2?timestamp=1635",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								"2"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/all",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/4/users",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"4",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<action_id>/rich",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/areas/4/rich",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"areas",
+								"4",
+								"rich"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<area_id>/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/areas/1/users",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"areas",
+								"1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations?timestamp=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations?timestamp=1635977106",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations?id=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjQ3MjIzNSwianRpIjoiYjA0YWI0MDItOGMxZC00MGRmLWIyYjAtNzRjZjFhYjE2NDMwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2NDcyMjM1LCJleHAiOjE2MzY1NTg2MzUsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.UATHXXTqJFp7RYE6kYCo2c2i4ij9hzYEMzcSFQxotSM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations?id=16333",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "16333"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/codes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/codes",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/resources/<action_id>/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/resources/1/all",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"resources",
+								"1",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations/2/7",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								"2",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>/<user_id>?timestamp=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations/2/7?timestamp=1635977106",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								"2",
+								"7"
+							],
+							"query": [
+								{
+									"key": "timestamp",
+									"value": "1635977106"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<action_id>/<user_id>?id=<integer>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations/2/7?id=1635",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								"2",
+								"7"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1635"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/codes/delete/<code_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/codes/delete/1",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"codes",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/locations/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/locations/14",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"locations",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/del_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 8,\n    \"action\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/del_user",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"del_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/del_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": 8,\n    \"area\": 56\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/areas/del_user",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"areas",
+								"del_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/areas/<area_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/areas/105",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"areas",
+								"105"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions/<action_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/actions/16",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actions",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/<user_id>",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNjIyOTIwMywianRpIjoiZGQ0OGM4YzAtOWJmYi00OGRiLTlhMjMtYTAxYzc2NmRkMDdhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNjM2MjI5MjAzLCJleHAiOjE2MzYzMTU2MDMsImlzX2FkbWluaXN0cmF0b3IiOnRydWV9.i2-nd4p2HU-WIx-2XPuIPatb0Om6tIXf2FpP1WpwUv0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sara-server.herokuapp.com/users/10",
+							"protocol": "https",
+							"host": [
+								"sara-server",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"maciek22\",\n    \"password\": \"maciek\",\n    \"first_name\": \"Maciej\",\n    \"last_name\": \"Maciej\",\n    \"phone\": \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sara-server.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"sara-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "maciek",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "maciek",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sara-server.herokuapp.com/login?admin_required=false",
+					"protocol": "https",
+					"host": [
+						"sara-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "admin_required",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login/code",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "5c358aaefe7272280704e9267a81a2fe",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sara-server.herokuapp.com/login/code",
+					"protocol": "https",
+					"host": [
+						"sara-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login",
+						"code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/webhook/twilio/chat",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://sara-server.herokuapp.com/webhook/twilio/chat",
+					"protocol": "https",
+					"host": [
+						"sara-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"webhook",
+						"twilio",
+						"chat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
